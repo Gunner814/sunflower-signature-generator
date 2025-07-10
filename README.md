@@ -163,4 +163,4 @@ This signature generator is for internal use by Sunflower Childcare Group employ
 
 ---
 
-*Built with ❤️ for the Sunflower Childcare Group team*
+*Built with ❤️ for the Sunflower Childcare Group IT Team*
