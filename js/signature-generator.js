@@ -129,7 +129,7 @@ class SignatureGenerator {
                                 </td>
                             </tr>
                             <tr>
-                                <td style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 14px; font-weight: bold; color: #2c2c2c; padding-bottom: 15px; white-space: nowrap;">
+                                <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 14px; font-weight: bold; color: #2c2c2c; padding-bottom: 15px; white-space: nowrap;">
                                     Sunflower Childcare Group Pte Ltd
                                 </td>
                             </tr>
@@ -143,7 +143,7 @@ class SignatureGenerator {
                                                         <td style="width: 24px; padding-right: 10px;">
                                                             <img src="https://lh3.googleusercontent.com/d/1X2PDjwAnYgpfh0tQHvZDzRPRUtW2kojn" width="20" height="20" alt="Email" style="display: block;">
                                                         </td>
-                                                        <td style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 12px;">
+                                                        <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
                                                             <a href="mailto:${data.email}" style="color: #333333; text-decoration: none;">${data.email}</a>
                                                         </td>
                                                     </tr>
@@ -157,7 +157,7 @@ class SignatureGenerator {
                                                         <td style="width: 24px; padding-right: 10px;">
                                                             <img src="https://lh3.googleusercontent.com/d/12GR50PYa813tP7JJjBEPtZj_PwXkK54f" width="20" height="20" alt="Website" style="display: block;">
                                                         </td>
-                                                        <td style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 12px;">
+                                                        <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
                                                             <a href="${websiteUrl}" style="color: #333333; text-decoration: none;">${websiteDisplay}</a>
                                                         </td>
                                                     </tr>
@@ -172,7 +172,7 @@ class SignatureGenerator {
                                                         <td style="width: 24px; padding-right: 10px;">
                                                             <img src="https://lh3.googleusercontent.com/d/1mMLCPHvIUWZaD10M9E-kGjyG7JbwUgA7" width="20" height="20" alt="Facebook" style="display: block;">
                                                         </td>
-                                                        <td style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 12px;">
+                                                        <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
                                                             <a href="${data.facebook}" style="color: #333333; text-decoration: none;">Sunflower Childcare Group</a>
                                                         </td>
                                                     </tr>
@@ -188,7 +188,7 @@ class SignatureGenerator {
                                                         <td style="width: 24px; padding-right: 10px;">
                                                             <img src="https://lh3.googleusercontent.com/d/1-htPqSQUC8JrJXFtIu3U6HmN1VzzAp-l" width="20" height="20" alt="Instagram" style="display: block;">
                                                         </td>
-                                                        <td style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 12px;">
+                                                        <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
                                                             <a href="${instagramUrl}" style="color: #333333; text-decoration: none;">${instagramDisplay}</a>
                                                         </td>
                                                     </tr>
@@ -203,7 +203,7 @@ class SignatureGenerator {
                     </td>
                     <td style="vertical-align: middle; text-align: center; padding-left: 30px;">
                         <img src="https://lh3.googleusercontent.com/d/1jyMkGfMMrs3oraejoV_0Du1PLBT-QOWJ" width="140" height="140" alt="Sunflower Logo" style="display: block; margin: 0 auto;">
-                        <div style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 12px; color: #4CAF50; font-weight: bold; margin-top: 20px; text-align: center;">
+                        <div style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px; color: #4CAF50; font-weight: bold; margin-top: 20px; text-align: center;">
                             We develop your child's<br>Multiple intelligences
                         </div>
                     </td>
