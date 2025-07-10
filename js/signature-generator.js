@@ -387,6 +387,9 @@ class SignatureGenerator {
             if (saved) {
                 const data = JSON.parse(saved);
                 
+                // Remove location field from saved data if it exists
+                delete data.location;
+                
                 // Populate form fields
                 Object.keys(data).forEach(key => {
                     const element = document.getElementById(key);
@@ -402,6 +405,8 @@ class SignatureGenerator {
             }
         } catch (error) {
             console.error('Error loading saved data:', error);
+            // Clear localStorage if there's an error to prevent future issues
+            this.clearLocalStorage();
         }
     }
 
