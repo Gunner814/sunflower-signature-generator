@@ -129,13 +129,8 @@ class SignatureGenerator {
                                 </td>
                             </tr>
                             <tr>
-                                <td style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 14px; font-weight: bold; color: #2c2c2c; padding-bottom: 8px; white-space: nowrap;">
+                                <td style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 14px; font-weight: bold; color: #2c2c2c; padding-bottom: 15px; white-space: nowrap;">
                                     Sunflower Childcare Group Pte Ltd
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 12px; color: #666666; font-style: italic; padding-bottom: 15px;">
-                                    We develop your child's Multiple intelligences
                                 </td>
                             </tr>
                             <tr>
@@ -208,6 +203,9 @@ class SignatureGenerator {
                     </td>
                     <td style="vertical-align: middle; text-align: center;">
                         <img src="https://lh3.googleusercontent.com/d/1jyMkGfMMrs3oraejoV_0Du1PLBT-QOWJ" width="140" height="140" alt="Sunflower Logo" style="display: block;">
+                        <div style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 12px; color: #4CAF50; margin-top: 10px; text-align: center;">
+                            We develop your child's Multiple intelligences
+                        </div>
                     </td>
                 </tr>
             </table>
