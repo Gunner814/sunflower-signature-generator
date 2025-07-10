@@ -49,7 +49,8 @@ class SignatureGenerator {
             email: document.getElementById('email').value.trim(),
             website: document.getElementById('website').value.trim(),
             facebook: document.getElementById('facebook').value.trim(),
-            instagram: document.getElementById('instagram').value.trim()
+            instagram: document.getElementById('instagram').value.trim(),
+            location: document.getElementById('location').value.trim()
         };
     }
 
@@ -190,6 +191,22 @@ class SignatureGenerator {
                                                         </td>
                                                         <td style="font-family: Georgia, serif; font-size: 12px;">
                                                             <a href="${instagramUrl}" style="color: #333333; text-decoration: none;">${instagramDisplay}</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        ` : ''}
+                                        ${data.location ? `
+                                        <tr>
+                                            <td style="padding: 2px 0;">
+                                                <table cellpadding="0" cellspacing="0" border="0">
+                                                    <tr>
+                                                        <td style="width: 24px; padding-right: 10px;">
+                                                            <img src="https://lh3.googleusercontent.com/d/1KZeuIwg_PRePcRpzpePNtMTqJ5OVgWnL" width="20" height="20" alt="Location" style="display: block;">
+                                                        </td>
+                                                        <td style="font-family: Georgia, serif; font-size: 12px; color: #333333;">
+                                                            ${data.location}
                                                         </td>
                                                     </tr>
                                                 </table>

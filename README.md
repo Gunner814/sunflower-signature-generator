@@ -2,6 +2,8 @@
 
 A professional email signature generator for Sunflower Childcare Group employees. This tool allows team members to create consistent, branded email signatures that work across all email clients.
 
+🌻 **Live Demo:** [https://gunner814.github.io/sunflower-signature-generator](https://gunner814.github.io/sunflower-signature-generator)
+
 ![Sunflower Logo](https://lh3.googleusercontent.com/d/1jyMkGfMMrs3oraejoV_0Du1PLBT-QOWJ)
 
 ## Features
@@ -14,6 +16,7 @@ A professional email signature generator for Sunflower Childcare Group employees
 - ✅ **Download Option** - Save signature as HTML file for manual installation
 - ✅ **Auto-save** - Remembers your information for future visits
 - ✅ **Social Media Links** - Optional Facebook and Instagram integration
+- ✅ **Location Field** - Optional location/address information
 
 ## How to Use
 
@@ -24,6 +27,7 @@ A professional email signature generator for Sunflower Childcare Group employees
    - Website (optional)
    - Facebook Page URL (optional)
    - Instagram Handle (optional)
+   - Location (optional)
 
 2. **Generate your signature:**
    - Click "Generate Signature"
@@ -107,6 +111,7 @@ Current icon URLs (hosted on Google Drive):
 - Website: `12GR50PYa813tP7JJjBEPtZj_PwXkK54f`
 - Facebook: `1mMLCPHvIUWZaD10M9E-kGjyG7JbwUgA7`
 - Instagram: `1-htPqSQUC8JrJXFtIu3U6HmN1VzzAp-l`
+- Location: `1KZeuIwg_PRePcRpzpePNtMTqJ5OVgWnL`
 - Logo: `1jyMkGfMMrs3oraejoV_0Du1PLBT-QOWJ`
 
 ## Contributing
@@ -163,4 +168,4 @@ This signature generator is for internal use by Sunflower Childcare Group employ
 
 ---
 
-*Built with ❤️ for the Sunflower Childcare Group IT Team*
+*Built with ❤️ for the Sunflower Childcare Group team*
