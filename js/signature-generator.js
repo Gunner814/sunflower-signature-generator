@@ -44,12 +44,12 @@ class SignatureGenerator {
 
     getFormData() {
         return {
-            fullName: document.getElementById('fullName').value.trim(),
-            jobTitle: document.getElementById('jobTitle').value.trim(),
-            email: document.getElementById('email').value.trim(),
-            website: document.getElementById('website').value.trim(),
-            facebook: document.getElementById('facebook').value.trim(),
-            instagram: document.getElementById('instagram').value.trim()
+            fullName: document.getElementById('fullName')?.value.trim() || '',
+            jobTitle: document.getElementById('jobTitle')?.value.trim() || '',
+            email: document.getElementById('email')?.value.trim() || '',
+            website: document.getElementById('website')?.value.trim() || '',
+            facebook: document.getElementById('facebook')?.value.trim() || '',
+            instagram: document.getElementById('instagram')?.value.trim() || ''
         };
     }
 
