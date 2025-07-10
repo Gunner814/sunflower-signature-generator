@@ -49,8 +49,7 @@ class SignatureGenerator {
             email: document.getElementById('email').value.trim(),
             website: document.getElementById('website').value.trim(),
             facebook: document.getElementById('facebook').value.trim(),
-            instagram: document.getElementById('instagram').value.trim(),
-            location: document.getElementById('location').value.trim()
+            instagram: document.getElementById('instagram').value.trim()
         };
     }
 
@@ -130,8 +129,13 @@ class SignatureGenerator {
                                 </td>
                             </tr>
                             <tr>
-                                <td style="font-family: Georgia, serif; font-size: 14px; font-weight: bold; color: #2c2c2c; padding-bottom: 15px; white-space: nowrap;">
+                                <td style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 14px; font-weight: bold; color: #2c2c2c; padding-bottom: 8px; white-space: nowrap;">
                                     Sunflower Childcare Group Pte Ltd
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 12px; color: #666666; font-style: italic; padding-bottom: 15px;">
+                                    We develop your child's Multiple intelligences
                                 </td>
                             </tr>
                             <tr>
@@ -191,22 +195,6 @@ class SignatureGenerator {
                                                         </td>
                                                         <td style="font-family: Georgia, serif; font-size: 12px;">
                                                             <a href="${instagramUrl}" style="color: #333333; text-decoration: none;">${instagramDisplay}</a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        ` : ''}
-                                        ${data.location ? `
-                                        <tr>
-                                            <td style="padding: 2px 0;">
-                                                <table cellpadding="0" cellspacing="0" border="0">
-                                                    <tr>
-                                                        <td style="width: 24px; padding-right: 10px;">
-                                                            <img src="https://lh3.googleusercontent.com/d/1KZeuIwg_PRePcRpzpePNtMTqJ5OVgWnL" width="20" height="20" alt="Location" style="display: block;">
-                                                        </td>
-                                                        <td style="font-family: Georgia, serif; font-size: 12px; color: #333333;">
-                                                            ${data.location}
                                                         </td>
                                                     </tr>
                                                 </table>
