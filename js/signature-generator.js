@@ -201,10 +201,10 @@ class SignatureGenerator {
                             </tr>
                         </table>
                     </td>
-                    <td style="vertical-align: middle; text-align: center;">
-                        <img src="https://lh3.googleusercontent.com/d/1jyMkGfMMrs3oraejoV_0Du1PLBT-QOWJ" width="140" height="140" alt="Sunflower Logo" style="display: block;">
-                        <div style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 12px; color: #4CAF50; margin-top: 10px; text-align: center;">
-                            We develop your child's Multiple intelligences
+                    <td style="vertical-align: middle; text-align: center; padding-left: 30px;">
+                        <img src="https://lh3.googleusercontent.com/d/1jyMkGfMMrs3oraejoV_0Du1PLBT-QOWJ" width="140" height="140" alt="Sunflower Logo" style="display: block; margin: 0 auto;">
+                        <div style="font-family: 'VAG Rounded Next', Arial, sans-serif; font-size: 12px; color: #4CAF50; font-weight: bold; margin-top: 20px; text-align: center;">
+                            We develop your child's<br>Multiple intelligences
                         </div>
                     </td>
                 </tr>
