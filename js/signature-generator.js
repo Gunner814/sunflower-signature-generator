@@ -46,6 +46,7 @@ class SignatureGenerator {
         return {
             fullName: document.getElementById('fullName')?.value.trim() || '',
             jobTitle: document.getElementById('jobTitle')?.value.trim() || '',
+            companyName: document.getElementById('companyName')?.value.trim() || '',
             email: document.getElementById('email')?.value.trim() || '',
             website: document.getElementById('website')?.value.trim() || '',
             facebook: document.getElementById('facebook')?.value.trim() || '',
@@ -62,6 +63,10 @@ class SignatureGenerator {
         
         if (!data.jobTitle) {
             errors.push('Job Title is required');
+        }
+        
+        if (!data.companyName) {
+            errors.push('Company Name is required');
         }
         
         if (!data.email) {
@@ -130,7 +135,7 @@ class SignatureGenerator {
                             </tr>
                             <tr>
                                 <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 14px; font-weight: bold; color: #2c2c2c; padding-bottom: 15px; white-space: nowrap;">
-                                    Sunflower Childcare Group Pte Ltd
+                                    ${data.companyName || 'Sunflower Childcare Group Pte Ltd'}
                                 </td>
                             </tr>
                             <tr>
@@ -215,7 +220,7 @@ class SignatureGenerator {
     updatePreview() {
         const data = this.getFormData();
         
-        if (!data.fullName && !data.jobTitle && !data.email) {
+        if (!data.fullName && !data.jobTitle && !data.companyName && !data.email) {
             this.preview.innerHTML = `
                 <div class="placeholder">
                     <p>👈 Fill in your information to see your signature preview</p>
