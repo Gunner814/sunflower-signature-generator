@@ -15,8 +15,16 @@ class SignatureGenerator {
         // Form inputs - real-time preview
         const inputs = this.form.querySelectorAll('input');
         inputs.forEach(input => {
-            input.addEventListener('input', () => this.updatePreview());
-            input.addEventListener('blur', () => this.saveToLocalStorage());
+            input.addEventListener('input', () => {
+                this.updatePreview();
+            });
+            input.addEventListener('change', () => {
+                this.updatePreview();
+            });
+            input.addEventListener('blur', () => {
+                this.saveToLocalStorage();
+                this.updatePreview();
+            });
         });
 
         // Buttons
