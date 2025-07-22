@@ -127,108 +127,116 @@ class SignatureGenerator {
             'www.sunflowerkid.com';
 
         return `
-            <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; color: #333333; max-width: 600px;">
-                <tr>
-                    <td style="vertical-align: middle; padding-right: 20px;">
-                        <table cellpadding="0" cellspacing="0" border="0">
-                            <tr>
-                                <td style="font-family: 'Montserrat', Arial, sans-serif; font-size: 24px; font-weight: 600; color: #2c2c2c; padding-bottom: 3px;">
-                                    ${data.fullName}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-family: 'Alice', serif; font-size: 14px; color: #666666; padding-bottom: 12px;">
-                                    ${data.jobTitle}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 14px; font-weight: bold; color: #2c2c2c; padding-bottom: 15px; white-space: nowrap;">
-                                    ${data.companyName || 'Sunflower Childcare Group Pte Ltd'}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <table cellpadding="0" cellspacing="0" border="0">
-                                        <tr>
-                                            <td style="padding: 2px 0;">
-                                                <table cellpadding="0" cellspacing="0" border="0">
-                                                    <tr>
-                                                        <td style="width: 24px; padding-right: 10px;">
-                                                            <img src="https://lh3.googleusercontent.com/d/1X2PDjwAnYgpfh0tQHvZDzRPRUtW2kojn" width="20" height="20" alt="Email" style="display: block;">
-                                                        </td>
-                                                        <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
-                                                            <a href="mailto:${data.email}" style="color: #333333; text-decoration: none;">${data.email}</a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding: 2px 0;">
-                                                <table cellpadding="0" cellspacing="0" border="0">
-                                                    <tr>
-                                                        <td style="width: 24px; padding-right: 10px;">
-                                                            <img src="https://lh3.googleusercontent.com/d/12GR50PYa813tP7JJjBEPtZj_PwXkK54f" width="20" height="20" alt="Website" style="display: block;">
-                                                        </td>
-                                                        <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
-                                                            <a href="${websiteUrl}" style="color: #333333; text-decoration: none;">${websiteDisplay}</a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        ${data.facebook ? `
-                                        <tr>
-                                            <td style="padding: 2px 0;">
-                                                <table cellpadding="0" cellspacing="0" border="0">
-                                                    <tr>
-                                                        <td style="width: 24px; padding-right: 10px;">
-                                                            <img src="https://lh3.googleusercontent.com/d/1mMLCPHvIUWZaD10M9E-kGjyG7JbwUgA7" width="20" height="20" alt="Facebook" style="display: block;">
-                                                        </td>
-                                                        <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
-                                                            <a href="${data.facebook}" style="color: #333333; text-decoration: none;">Sunflower Childcare Group</a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        ` : ''}
-                                        ${data.instagram ? `
-                                        <tr>
-                                            <td style="padding: 2px 0;">
-                                                <table cellpadding="0" cellspacing="0" border="0">
-                                                    <tr>
-                                                        <td style="width: 24px; padding-right: 10px;">
-                                                            <img src="https://lh3.googleusercontent.com/d/1-htPqSQUC8JrJXFtIu3U6HmN1VzzAp-l" width="20" height="20" alt="Instagram" style="display: block;">
-                                                        </td>
-                                                        <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
-                                                            <a href="${instagramUrl}" style="color: #333333; text-decoration: none;">${instagramDisplay}</a>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        ` : ''}
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td style="vertical-align: middle; text-align: center; padding-left: 30px;">
-                        <img src="https://lh3.googleusercontent.com/d/1jyMkGfMMrs3oraejoV_0Du1PLBT-QOWJ" width="140" height="140" alt="Sunflower Logo" style="display: block; margin: 0 auto;">
-                        <div style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px; color: #4CAF50; font-weight: bold; margin-top: 20px; text-align: center;">
-                            We develop your child's<br>Multiple intelligences
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="padding-top: 20px;">
-                        <div style="font-family: Arial, sans-serif; font-size: 10px; color: #666666; border-top: 1px solid #e0e0e0; padding-top: 10px; margin-top: 10px;">
-                            <strong>WARNING:</strong> "Privileged / Confidential information may be contained in this message. If you are not the intended addressee, you must not copy, distribute or take any action in reliance thereon. Communication of any information in this email to any unauthorised person is an offence under the Official Secrets Act (Cap 213). Please notify the sender immediately if you receive this in error."
-                        </div>
-                    </td>
-                </tr>
-            </table>
+            <div>
+                <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; color: #333333; max-width: 600px;">
+                    <tr>
+                        <td style="vertical-align: top; padding-right: 30px;">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-family: 'Montserrat', Arial, sans-serif; font-size: 24px; font-weight: 600; color: #2c2c2c; padding-bottom: 3px;">
+                                        ${data.fullName}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: 'Alice', serif; font-size: 14px; color: #666666; padding-bottom: 12px;">
+                                        ${data.jobTitle}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 14px; font-weight: bold; color: #2c2c2c; padding-bottom: 15px;">
+                                        ${data.companyName || 'Sunflower Childcare Group Pte Ltd'}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td style="padding: 2px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 24px; padding-right: 10px;">
+                                                                <img src="https://lh3.googleusercontent.com/d/1X2PDjwAnYgpfh0tQHvZDzRPRUtW2kojn" width="20" height="20" alt="Email" style="display: block;">
+                                                            </td>
+                                                            <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
+                                                                <a href="mailto:${data.email}" style="color: #333333; text-decoration: none;">${data.email}</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 2px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 24px; padding-right: 10px;">
+                                                                <img src="https://lh3.googleusercontent.com/d/12GR50PYa813tP7JJjBEPtZj_PwXkK54f" width="20" height="20" alt="Website" style="display: block;">
+                                                            </td>
+                                                            <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
+                                                                <a href="${websiteUrl}" style="color: #333333; text-decoration: none;">${websiteDisplay}</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            ${data.facebook ? `
+                                            <tr>
+                                                <td style="padding: 2px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 24px; padding-right: 10px;">
+                                                                <img src="https://lh3.googleusercontent.com/d/1mMLCPHvIUWZaD10M9E-kGjyG7JbwUgA7" width="20" height="20" alt="Facebook" style="display: block;">
+                                                            </td>
+                                                            <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
+                                                                <a href="${data.facebook}" style="color: #333333; text-decoration: none;">Sunflower Childcare Group</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            ` : ''}
+                                            ${data.instagram ? `
+                                            <tr>
+                                                <td style="padding: 2px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 24px; padding-right: 10px;">
+                                                                <img src="https://lh3.googleusercontent.com/d/1-htPqSQUC8JrJXFtIu3U6HmN1VzzAp-l" width="20" height="20" alt="Instagram" style="display: block;">
+                                                            </td>
+                                                            <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
+                                                                <a href="${instagramUrl}" style="color: #333333; text-decoration: none;">${instagramDisplay}</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            ` : ''}
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="vertical-align: top; text-align: center; width: 140px;">
+                            <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <img src="https://lh3.googleusercontent.com/d/1jyMkGfMMrs3oraejoV_0Du1PLBT-QOWJ" width="120" height="120" alt="Sunflower Logo" style="display: block; margin: 0 auto;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center; padding-top: 10px;">
+                                        <div style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px; color: #4CAF50; font-weight: bold; line-height: 1.2;">
+                                            We develop your child's<br>Multiple intelligences
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <div style="border-top: 1px solid #e0e0e0; padding-top: 8px; margin-top: 15px; font-family: Arial, sans-serif; font-size: 9px; color: #999999; line-height: 1.2; max-width: 600px;">
+                    <strong>WARNING:</strong> Privileged / Confidential information may be contained in this message. If you are not the intended addressee, you must not copy, distribute or take any action in reliance thereon. Communication of any information in this email to any unauthorised person is an offence under the Official Secrets Act (Cap 213). Please notify the sender immediately if you receive this in error.
+                </div>
+            </div>
         `;
     }
 
