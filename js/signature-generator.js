@@ -221,6 +221,13 @@ class SignatureGenerator {
                         </div>
                     </td>
                 </tr>
+                <tr>
+                    <td colspan="2" style="padding-top: 20px;">
+                        <div style="font-family: Arial, sans-serif; font-size: 10px; color: #666666; border-top: 1px solid #e0e0e0; padding-top: 10px; margin-top: 10px;">
+                            <strong>WARNING:</strong> "Privileged / Confidential information may be contained in this message. If you are not the intended addressee, you must not copy, distribute or take any action in reliance thereon. Communication of any information in this email to any unauthorised person is an offence under the Official Secrets Act (Cap 213). Please notify the sender immediately if you receive this in error."
+                        </div>
+                    </td>
+                </tr>
             </table>
         `;
     }
