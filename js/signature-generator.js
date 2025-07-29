@@ -56,6 +56,8 @@ class SignatureGenerator {
             jobTitle: document.getElementById('jobTitle')?.value.trim() || '',
             companyName: document.getElementById('companyName')?.value.trim() || '',
             email: document.getElementById('email')?.value.trim() || '',
+            phoneNumber: document.getElementById('phoneNumber')?.value.trim() || '',
+            location: document.getElementById('location')?.value.trim() || '',
             website: document.getElementById('website')?.value.trim() || '',
             facebook: document.getElementById('facebook')?.value.trim() || '',
             instagram: document.getElementById('instagram')?.value.trim() || ''
@@ -82,6 +84,7 @@ class SignatureGenerator {
         } else if (!this.isValidEmail(data.email)) {
             errors.push('Please enter a valid email address');
         }
+        
         
         if (data.website && !this.isValidUrl(data.website)) {
             errors.push('Please enter a valid website URL');
@@ -150,6 +153,22 @@ class SignatureGenerator {
                                 <tr>
                                     <td>
                                         <table cellpadding="0" cellspacing="0" border="0">
+                                            ${data.phoneNumber ? `
+                                            <tr>
+                                                <td style="padding: 2px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 24px; padding-right: 10px;">
+                                                                <img src="https://lh3.googleusercontent.com/d/1sRcrJs0EpkEGJIHvt1d-dz_5G3oWpXIQ" width="20" height="20" alt="Phone" style="display: block;">
+                                                            </td>
+                                                            <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
+                                                                <a href="tel:${data.phoneNumber.replace(/\s/g, '')}" style="color: #333333; text-decoration: none;">${data.phoneNumber}</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            ` : ''}
                                             <tr>
                                                 <td style="padding: 2px 0;">
                                                     <table cellpadding="0" cellspacing="0" border="0">
@@ -164,6 +183,22 @@ class SignatureGenerator {
                                                     </table>
                                                 </td>
                                             </tr>
+                                            ${data.location ? `
+                                            <tr>
+                                                <td style="padding: 2px 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                            <td style="width: 24px; padding-right: 10px;">
+                                                                <img src="https://lh3.googleusercontent.com/d/1KZeuIwg_PRePcRpzpePNtMTqJ5OVgWnL" width="20" height="20" alt="Location" style="display: block;">
+                                                            </td>
+                                                            <td style="font-family: 'VAG Rounded', Arial, sans-serif; font-size: 12px;">
+                                                                <span style="color: #333333;">${data.location}</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            ` : ''}
                                             <tr>
                                                 <td style="padding: 2px 0;">
                                                     <table cellpadding="0" cellspacing="0" border="0">
@@ -243,7 +278,7 @@ class SignatureGenerator {
     updatePreview() {
         const data = this.getFormData();
         
-        if (!data.fullName && !data.jobTitle && !data.companyName && !data.email) {
+        if (!data.fullName && !data.jobTitle && !data.companyName && !data.email && !data.phoneNumber && !data.location) {
             this.preview.innerHTML = `
                 <div class="placeholder">
                     <p>👈 Fill in your information to see your signature preview</p>
