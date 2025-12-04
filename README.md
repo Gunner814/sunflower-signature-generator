@@ -2,7 +2,7 @@
 
 A professional email signature generator for Sunflower Childcare Group employees. This tool allows team members to create consistent, branded email signatures that work across all email clients.
 
-🌻 **Live Demo:** [https://gunner814.github.io/sunflower-signature-generator](https://gunner814.github.io/sunflower-signature-generator)
+🌻 **Live Demo:** [https://sunflower-childcare-group.github.io/sunflower-signature-generator](https://sunflower-childcare-group.github.io/sunflower-signature-generator)
 
 ![Sunflower Logo](https://lh3.googleusercontent.com/d/1jyMkGfMMrs3oraejoV_0Du1PLBT-QOWJ)
 
